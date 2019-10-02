@@ -1,6 +1,12 @@
 # Docker deploy webhook
+# Docker swarm
+
+`docker swarm init`
+
+`docker service create --name docker-deploy-webhook --with-registry-auth --constraint "node.role==manager" --publish=3000:3000 --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock -e PORT="3000" -e CONFIG="production" -e TOKEN="123456QWERTY" siturrausach/docker-deploy-webhook:latest`
+
 ## Docker
-###  Construyendo el Docker
+### Construyendo el Docker
 
 Vaya a la carpeta del proyecto en una ventana de terminal, luego ejecute el siguiente comando para construir el contenedor y etiquetarlo como docker-deploy-webhook
 
