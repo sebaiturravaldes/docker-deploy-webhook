@@ -26,4 +26,8 @@ Atajo: `docker stop docker-deploy-webhook && docker rm docker-deploy-webhook`
 
 ## Remove service
 
-`docker service rm XXXXXXX`
+`docker service rm [NAME]`
+
+## Add service swarm
+
+`docker service create --name [NAME] --constraint "node.role==manager" --publish=80:80 hub:latest`
