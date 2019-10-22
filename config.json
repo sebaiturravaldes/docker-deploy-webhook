@@ -3,11 +3,6 @@
     "siturrausach/docker-deploy-webhook:latest": {
       "service": "docker-deploy-webhook"
     },
-    /*
-    "siturrausach/mingeso-front:latest": {
-      "service": "mingeso-front"
-    },
-    */
     "siturrausach/mingeso-backend:latest": {
       "service": "mingeso-backend"
     },
