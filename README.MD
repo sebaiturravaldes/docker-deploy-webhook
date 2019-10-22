@@ -23,3 +23,7 @@ Atajo: `docker stop docker-deploy-webhook && docker rm docker-deploy-webhook`
 ## Testing
 
 `curl -v -H "Content-Type: application/json" --data @payload.json  http://localhost:3000/webhook/123456QWERTY`
+
+## Remove service
+
+`docker service rm XXXXXXX`
